@@ -53,3 +53,7 @@ logs/
 
 # Environment variables
 .env
+
+# Runtime state written by the Restocking feature
+server/data/submitted_orders.json
+server/data/submitted_orders.json.tmp

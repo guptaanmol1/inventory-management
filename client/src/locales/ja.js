@@ -5,6 +5,7 @@ export default {
     inventory: '在庫',
     orders: '注文',
     finance: '財務',
+    restocking: '補充発注',
     demandForecast: '需要予測',
     companyName: '触媒コンポーネンツ',
     subtitle: '在庫管理システム'
@@ -112,7 +113,13 @@ export default {
     onTimeDelivery: '定時配達',
     itemsCount: '{count}件',
     quantity: '数量',
+    submittedOrders: '発注済みオーダー',
+    submittedNote: '補充発注のため、上記のフィルターは適用されません。',
+    noSubmittedOrders: '補充発注はまだありません。',
+    leadTimeDays: '{count}日',
     table: {
+      leadTime: 'リードタイム（日）',
+      submittedDate: '発注日',
       orderNumber: '注文番号',
       orderId: '注文ID',
       orderDate: '注文日',
@@ -130,6 +137,38 @@ export default {
   },
 
   // Finance/Spending
+  restocking: {
+    title: '補充発注',
+    description: '予算内で補充費用を計画し、補充発注を行います',
+    budget: '予算',
+    maxHint: '不足分をすべて補充するには {amount} かかります',
+    plannedSpend: '計画支出額',
+    remaining: '残予算',
+    itemsToOrder: '発注品目数',
+    estimatedLeadTime: '推定リードタイム',
+    days: '{count}日',
+    recommendations: '推奨発注',
+    placeOrder: '発注する',
+    placing: '発注中...',
+    orderPlaced: '注文 {number} を送信しました。',
+    leadTimeDelivery: 'リードタイム {days}日、配達予定日 {date}。',
+    viewInOrders: '注文画面で確認',
+    orderFailed: '発注に失敗しました',
+    loadFailed: '推奨データの読み込みに失敗しました',
+    noItemsFit: 'この予算で発注できる品目はありません。予算を増やしてください。',
+    nothingNeeded: '現在、補充は必要ありません。',
+    table: {
+      sku: 'SKU',
+      name: '品名',
+      category: 'カテゴリ',
+      trend: '傾向',
+      shortfall: '不足数',
+      quantity: '発注数量',
+      unitCost: '単価',
+      lineCost: '小計',
+      leadTime: 'リードタイム'
+    }
+  },
   finance: {
     title: '財務ダッシュボード',
     description: '収益、コスト、財務パフォーマンスの追跡',
@@ -203,6 +242,7 @@ export default {
     delivered: '配達済み',
     shipped: '出荷済み',
     processing: '処理中',
+    submitted: '発注済み',
     backordered: 'バックオーダー',
     inStock: '在庫あり',
     lowStock: '在庫僅少',
