@@ -5,6 +5,7 @@ export default {
     inventory: 'Inventory',
     orders: 'Orders',
     finance: 'Finance',
+    restocking: 'Restocking',
     demandForecast: 'Demand Forecast',
     companyName: 'Catalyst Components',
     subtitle: 'Inventory Management System'
@@ -112,7 +113,13 @@ export default {
     onTimeDelivery: 'On-Time Delivery',
     itemsCount: '{count} items',
     quantity: 'Qty',
+    submittedOrders: 'Submitted Orders',
+    submittedNote: 'Restocking orders; filters above do not apply.',
+    noSubmittedOrders: 'No restocking orders have been submitted yet.',
+    leadTimeDays: '{count} days',
     table: {
+      leadTime: 'Lead Time (days)',
+      submittedDate: 'Submitted',
       orderNumber: 'Order Number',
       orderId: 'Order ID',
       orderDate: 'Order Date',
@@ -130,6 +137,38 @@ export default {
   },
 
   // Finance/Spending
+  restocking: {
+    title: 'Restocking',
+    description: 'Plan replenishment spend within a budget and place a restocking order',
+    budget: 'Budget',
+    maxHint: 'Fully covering every shortfall costs {amount}',
+    plannedSpend: 'Planned Spend',
+    remaining: 'Remaining',
+    itemsToOrder: 'Items to Order',
+    estimatedLeadTime: 'Estimated Lead Time',
+    days: '{count} days',
+    recommendations: 'Recommendations',
+    placeOrder: 'Place Order',
+    placing: 'Placing...',
+    orderPlaced: 'Order {number} submitted.',
+    leadTimeDelivery: 'Lead time {days} days; estimated delivery {date}.',
+    viewInOrders: 'View in Orders',
+    orderFailed: 'Failed to place order',
+    loadFailed: 'Failed to load recommendations',
+    noItemsFit: 'No items fit within this budget. Increase the budget to see recommendations.',
+    nothingNeeded: 'No restocking is needed right now.',
+    table: {
+      sku: 'SKU',
+      name: 'Name',
+      category: 'Category',
+      trend: 'Trend',
+      shortfall: 'Shortfall',
+      quantity: 'Order Qty',
+      unitCost: 'Unit Cost',
+      lineCost: 'Line Cost',
+      leadTime: 'Lead Time'
+    }
+  },
   finance: {
     title: 'Finance Dashboard',
     description: 'Track revenue, costs, and financial performance',
@@ -203,6 +242,7 @@ export default {
     delivered: 'Delivered',
     shipped: 'Shipped',
     processing: 'Processing',
+    submitted: 'Submitted',
     backordered: 'Backordered',
     inStock: 'In Stock',
     lowStock: 'Low Stock',
